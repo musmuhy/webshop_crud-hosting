@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="shopstyle.css">
+    <script src="shopscript.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+         <!-- Logo  -->
+         <a href="#home" class="logo">Get <span>Fit</span></a>
+        <nav>
+            <ul class="nav-links">                
+                <li><a href="#">Products</a></li>                
+                <li><a href="#" class="cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products">
+        <h1>Products</h1>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Protein Powder</h3>
+                <img src="assets/protein.webp" alt="Protein Powder" />
+                <p>$60.99</p>
+                <button class="add-to-cart" data-product="Protein Powder" data-price="30">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Creatine Supplement</h3>
+                <img src="assets/Creatine.webp" alt="Creatine Supplements" />
+                <p>$45.99</p>
+                <button class="add-to-cart" data-product="Creatine Supplements" data-price="25">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Protein Bar</h3>
+                <img src="assets/proteinbar.webp" alt="Protein Bar" />
+                <p>$4.99</p>
+                <button class="add-to-cart" data-product="Protein Bar" data-price="5">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>T-Shirts</h3>
+                <img src="assets/shirt 1.jpg" alt="T-Shirts" />
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product="T-Shirts" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Steroids</h3>
+                <img src="assets/steriods.jpeg" alt="Steroids" />
+                <p>$225</p>
+                <button class="add-to-cart" data-product="Steroids" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically be added here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: $<span id="total-price">0</span></h3>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; GET-FIT 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Choose Payment Method</h2>
+            <div class="payment-options">
+                <button class="payment-btn paypal">PayPal</button>
+                <button class="payment-btn mastercard">Mastercard</button>
+                <button class="payment-btn visa">Visa</button>
+                <button class="payment-btn haspa">Haspa Girokonto</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

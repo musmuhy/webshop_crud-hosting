@@ -1,0 +1,241 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo span {
+    color: #e8491d;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cart {
+    background-color: #e8491d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Product Section */
+.products {
+    margin: 20px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 10px solid #dd1414;
+    border-radius: 35px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 215px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #d7371b;
+}
+
+/* Cart Section */
+.cart-section {
+    margin: 20px 0;
+}
+
+.cart-items {
+    border: 1px solid #dddddd84;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cart-items div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-items button {
+    background-color: #097c20;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-total {
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Checkout Modal */
+.checkout-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.payment-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.payment-btn.paypal {
+    background-color: #ffc439;
+    color: black;
+}
+
+.payment-btn.mastercard {
+    background-color: #ff5f00;
+    color: white;
+}
+
+.payment-btn.visa {
+    background-color: #1a1f71;
+    color: white;
+}
+
+.payment-btn.haspa {
+    background-color: #ee1c25;
+    color: white;
+}
+
+.payment-btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .payment-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Footer styling */
+footer {
+    color: rgb(4, 0, 0);
+    text-align: center;
+    padding: 1px 0;
+    position: fixed; /* Makes the footer fixed at the bottom */
+    bottom: 0; /* Position it at the bottom of the page */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1; /* Ensure it's above the video */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background to ensure readability */
+    background: transparent;
+}

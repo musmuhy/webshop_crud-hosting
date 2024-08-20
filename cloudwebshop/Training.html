@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="Trainingstyle.css">
+    <link rel="stylesheet" href="Training.js">
+        
+
+</head>
+<body>
+    <header class="hero-section">
+        <div class="navbar">
+            <div class="logo">
+                <h2>GET-FIT</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="login.html">JoinUs</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="video-container">
+            <video class="hero-video" autoplay loop muted>
+                <source src="assets/bicepcurl.mp4" type="video/mp4">
+                
+            </video>
+            <div class="video-overlay">
+                <h2>Push your Limit</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="animated-text-section">
+            <h1>Know your limits. To break them.</h1>
+            <h2>LIVE CLASSES</h2>
+            <p>
+                Intense. Effective. Extraordinary. Our live classes get down to business.<br>
+                Yoga, Pilates, Boxing, HIIT, back training and more – our instructors know how to get the best out of you, “Go hard, or go home!” 
+                “Take a small step every day and just keep going.” “The difference between try and triumph is a little umph.” 
+                “If you still look good at the end of your workout, you didn't train hard enough.”
+            </p>
+            <p class="notice">
+                Notice: please be on time and remember to bring a towel and enough water.
+            </p>
+        <section class="training-areas">
+                <div class="container">
+                    <div class="grid">
+                        <div class="area">
+                            <div class="image-placeholder" style="background-image: url('assets/functional.jpeg');"></div>
+                            <h3>Functional Area</h3>
+                        </div>
+            
+                        <div class="area">
+                            <div class="image-placeholder" style="background-image: url('assets/wellness.jpeg');"></div>
+                            <h3>Wellness Area</h3>
+                        </div>
+            
+                        <div class="area">
+                            <div class="image-placeholder" style="background-image: url('assets/cardio.jpeg');"></div>
+                            <h3>Cardio Area</h3>
+                        </div>
+            
+                        <div class="area">
+                            <div class="image-placeholder" style="background-image: url('assets/lounge.jpeg');"></div>
+                            <h3>Lounge Area</h3>
+                        </div>
+            
+                        <div class="area">
+                            <div class="image-placeholder" style="background-image: url('assets/power.jpeg');"></div>
+                            <h3>Power Area</h3>
+                        </div>
+            
+                        <div class="area">
+                            <div class="image-placeholder" style="background-image: url('assets/custom.jpeg');"></div>
+                            <h3>Custom Area</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+        <section class="information-section">
+            <div class="container">
+                <div class="info-item">
+                    <h3>Opening Times</h3>
+                    <p>Monday - Saturday: 24 Hours Open</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>Jupiter&Mars Somewhere far far away
+                        Don't even try👽
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>Our Location</h3>
+                    <div id="map" style="width: 100%; height: 300px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" class="social-link">
+                    <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+                    
+                </a>
+                <a href="https://www.youtube.com" target="blank" class="sociallink">
+                    <img src="https://img.icons8.com/color/48/youtube-squared.png" alt="youtube-squared"/>
+                </a>
+                
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <p>&copy; GET-FIT 2024 All rights reserved.</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    
+
+    <script src="Training.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Get Fit</title>
+    <script type="module" src="Firebaseauth.js"></script>
+</head>
+<body>
+    <body>
+
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="assets/loungevidd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <!-- main page content -->
+<div class="content">
+    <h1>WORK OUT EXTRAORDINARY</h1>
+    <h2>DESIGNED FOR PERFORMANCE</h2>
+    <h3>Unique Training Area</h3>
+</div>
+
+
+    
+    </body>
+
+    
+    <header>
+        <!-- Logo  -->
+        <a href="#home" class="logo">Get <span>Fit</span></a>
+
+        <!-- Nav Bar -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="Training.html">Training</a></li> 
+            <li><a href="shopindex.html">Shop</a></li> 
+
+        </ul>
+
+        <!-- Login Button -->
+        <a href="login.html" class="login-btn">Login</a>
+
+        <!-- Menu icon for mobile view (optional) -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Contact Us Button -->
+        <a href="contact.html" class="contact-btn">Contact Us</a>
+
+    </header>
+
+</section>
+
+<section class="follow-us">
+    
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank" class="social-link">
+            <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+            
+        </a>
+        <a href="https://www.youtube.com" target="blank" class="sociallink">
+            <img src="https://img.icons8.com/color/48/youtube-squared.png" alt="youtube-squared"/>
+        </a>
+        
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; GET-FIT 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+
+    <!-- JavaScript for toggling mobile menu -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

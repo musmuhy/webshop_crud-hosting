@@ -1,0 +1,63 @@
+
+    "Products": {
+        "id":1,
+        "pure WheyProtein powder": {
+            "price":  60.99,
+            "name": "BULK"
+            "Quantity": 1
+        }
+    }
+
+
+    "Products": {
+        "id":1.1,
+        "Vegan Protein powder": {
+            "price":  79.99,
+            "name": "BULK"
+            "Quantity": 1
+        }
+    }
+
+{
+    "Products": {
+        "id":2,
+        "Creatine supplement": {
+            "price":  45.99,
+            "name": "BULK"
+            "Quantity": 1
+        }
+    }
+}
+
+"Products": {
+    "id":3,
+    "Protein Bar": {
+        "price": 4.99,
+        "name": "BULK"
+        "Quantity": 1
+},
+}
+"Products": {
+    "id":4,
+    "T-shirt": {
+        "price": 19.99,
+        "name": "Getfit"
+        "Quantity": 1
+},
+
+"Products": {
+    "id":4.1,
+    "T-shirt": {
+        "price": 29.45,
+        "name": "Getfit"
+        "Quantity": 1
+}
+
+"Products": {
+    "id":5,
+    "Steriods": {
+        "price": 225,
+        "name": "Bayern"
+        "Quantity": 1
+},
+}
